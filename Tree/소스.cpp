@@ -54,7 +54,7 @@ public:
 		push(t->left, key);
 	}
 
-	void preorder(node* t)
+	void preorder(node* t) // 전위 순회
 	{
 		if (t == tail)
 			return;
@@ -64,7 +64,7 @@ public:
 		preorder(t->right);
 	}
 
-	void inorder(node* t)
+	void inorder(node* t) // 중위 순회
 	{
 		if (t == tail)
 			return;
@@ -74,7 +74,7 @@ public:
 		inorder(t->right);
 	}
 
-	void postorder(node* t)
+	void postorder(node* t) // 후위 순회
 	{
 		if (t == tail)
 			return;
